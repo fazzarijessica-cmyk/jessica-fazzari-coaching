@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jessica Fazzari Coaching | Online Coach &amp; Personal Trainer</title>
+<meta name="description" content="Online coaching and personal training with Jessica Fazzari. Book your FREE no-obligation consult.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F1EA; --panel:#EDE3D6; --card:#FCF9F5; --ink:#3A2E28; --body:#5A4A40; --muted:#7A6656; --line:#D6C8B8; --photo:#E8DED0;
+    --serif:Lora, Georgia, serif; --sans:Poppins, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+  a{color:var(--ink)}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .eyebrow{margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+  h2{font-style:italic;font-size:clamp(32px,4vw,44px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:16px 30px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-align:center;transition:filter .2s}
+  .btn:hover{filter:brightness(1.25)}
+  .btn-outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn-outline:hover{background:#EFE6DA;filter:none}
+
+  header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+  .logo{font-family:var(--serif);font-style:italic;font-size:20px;text-decoration:none}
+  nav{display:flex;align-items:center;gap:24px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+  nav a.link{text-decoration:none}
+  nav .btn{min-height:44px;padding:10px 20px;font-size:12px}
+  @media (max-width:640px){nav a.link{display:none}.logo{font-size:17px}}
+
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:72px}
+  .hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px;text-align:left}
+  .hero h1{font-style:italic;font-size:clamp(34px,4.4vw,56px);line-height:1.1;white-space:nowrap}
+  .hero .offer{margin:0;font-size:18px;font-weight:700}
+  .hero-photo{position:relative;justify-self:center;width:100%;max-width:400px;padding:0 0 40px 40px}
+  .hero-photo .main{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:200px 200px 24px 24px;box-shadow:0 24px 48px rgba(58,46,40,.14)}
+  .hero-photo .selfie{position:absolute;left:0;bottom:0;width:132px;height:132px;object-fit:cover;border-radius:999px;box-shadow:0 12px 24px rgba(58,46,40,.16)}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;padding-top:36px;gap:40px}
+    .hero h1{white-space:normal}
+    .hero-photo{max-width:320px}
+    .hero-photo .selfie{width:104px;height:104px}
+  }
+
+  .packages{background:var(--panel);padding:80px 0}
+  .sec-head{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;margin-bottom:40px}
+  .plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  @media (max-width:920px){.plans{grid-template-columns:1fr;max-width:520px;margin:0 auto}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:16px}
+  .plan.pop{border:2px solid var(--ink)}
+  .tag{align-self:flex-start;background:var(--ink);color:#fff;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .plan h3{font-weight:500;font-size:26px}
+  .plan ul{margin:0;padding-left:18px;font-size:14px;line-height:1.8;color:var(--body);flex:1}
+  .plan .btn{font-size:13px}
+
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:80px}
+  .arches{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:start;max-width:520px;width:100%;justify-self:center}
+  .arches img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .arches .a1{border-radius:120px 120px 18px 18px;margin-top:40px}
+  .arches .a2{aspect-ratio:2/3;border-radius:18px;box-shadow:0 16px 32px rgba(58,46,40,.16)}
+  .arches .a3{border-radius:18px 18px 120px 120px;margin-top:80px}
+  .about-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+  .about-copy p{margin:0;font-size:15px;line-height:1.7;color:var(--body)}
+  @media (max-width:860px){.about{grid-template-columns:1fr;gap:40px}}
+
+  .final{background:var(--panel);padding:80px 0}
+  .final .wrap{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:32px;padding-bottom:48px;font-size:13px;color:var(--muted)}
+  footer .links{display:flex;gap:20px;flex-wrap:wrap}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Jessica Fazzari Coaching</a>
+    <nav>
+      <a class="link" href="#packages">Packages</a>
+      <a class="link" href="#about">About</a>
+      <a class="btn" href="https://form.typeform.com/to/Iev7dMO1">Book now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="top" class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Online Coach · Personal Trainer</p>
+      <h1>Train with purpose</h1>
+      <p class="offer">Book your FREE no-obligation consult</p>
+      <a class="btn" href="https://form.typeform.com/to/Iev7dMO1">Apply for free consult now</a>
+    </div>
+    <div class="hero-photo">
+      <img class="main" src="images/window1.jpg" alt="Jessica training by the window at sunset" width="750" height="1000">
+      <img class="selfie" src="images/selfie.jpg" alt="Jessica Fazzari" width="500" height="500">
+    </div>
+  </section>
+
+  <section id="packages" class="packages">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Packages</p>
+        <h2>Choose how you want to train</h2>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <h3>Online Coaching</h3>
+          <ul>
+            <li>Free 30-min consult</li>
+            <li>Personalised training program</li>
+            <li>Exercise video library</li>
+            <li>Coaching app access</li>
+          </ul>
+          <a class="btn btn-outline" href="https://form.typeform.com/to/Iev7dMO1">Apply now</a>
+        </article>
+        <article class="plan pop">
+          <span class="tag">Most popular</span>
+          <h3>Holistic Online Coaching</h3>
+          <ul>
+            <li>Free 30-min consult</li>
+            <li>Everything in Online Coaching</li>
+            <li>Meal prep &amp; recipes</li>
+            <li>Nutrition &amp; macro guidance</li>
+            <li>Unlimited messaging</li>
+            <li>Form checks</li>
+            <li>Weekly check-ins</li>
+          </ul>
+          <a class="btn" href="https://form.typeform.com/to/Iev7dMO1">Apply now</a>
+        </article>
+        <article class="plan">
+          <h3>Hybrid Coaching</h3>
+          <ul>
+            <li>Free 30-min consult</li>
+            <li>Everything in Holistic Online Coaching</li>
+            <li>Weekly one-on-one 45-min session at World Gym Ashmore</li>
+          </ul>
+          <a class="btn btn-outline" href="https://form.typeform.com/to/Iev7dMO1">Apply now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="wrap about">
+    <div class="arches">
+      <img class="a1" src="images/meal1.jpg" alt="Steak, eggs, roast pumpkin and broccolini" width="750" height="1000" loading="lazy">
+      <img class="a2" src="images/window2.jpg" alt="Jessica looking out the window at sunset" width="750" height="1000" loading="lazy">
+      <img class="a3" src="images/bb3.jpg" alt="Jessica in her emerald competition suit" width="667" height="1000" loading="lazy">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">About Jess</p>
+      <h2>Hi, I'm Jess.</h2>
+      <p>I've been in the gym since I was young, exploring Pilates, calisthenics and Hyrox before I fell in love with strength training. I'm a qualified personal trainer (Cert III &amp; IV in Fitness). I coach clients online, wherever they live, and offer one-on-one personal training at World Gym Ashmore, Queensland.</p>
+      <p>My coaching gives you structure: a plan built around you, real accountability, and habits you can keep for life.</p>
+      <a class="btn btn-outline" href="https://www.instagram.com/jessicafazzari_/">Follow @jessicafazzari_</a>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Ready to start?</h2>
+      <a class="btn" href="https://form.typeform.com/to/Iev7dMO1">Start now</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Jessica Fazzari Coaching</span>
+    <span class="links">
+      <a href="mailto:jessicafazzaricoaching@gmail.com">jessicafazzaricoaching@gmail.com</a>
+      <a href="https://www.instagram.com/jessicafazzari_/">@jessicafazzari_</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

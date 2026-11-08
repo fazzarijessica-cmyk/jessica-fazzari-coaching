@@ -5,9 +5,7 @@ Jessica's coaching website. Live at https://jessica-fazzari-coaching-cd-a8f72462
 Jessica is not a developer — explain changes in plain English and keep the site simple (plain HTML/CSS, no build step unless needed).
 
 ## Status
-The site's files haven't been added to this repo yet. The live version was uploaded to Netlify by hand. Next steps:
-1. Add the site files (from Netlify: Deploys → published deploy → Download deploy).
-2. Link this repo to the Netlify project so pushes to `main` deploy automatically.
+Site files are in this repo (`index.html`, `images/`). Live domain: jessicafazzaricoaching.com.au. Next step: link this repo to the Netlify project so pushes to `main` deploy automatically (until then, deploy by drag-and-drop in Netlify).
 
 ## Business details
 - Name: Jessica Fazzari Coaching
@@ -29,6 +27,7 @@ Online inclusions: personalised training, weekly check-ins, general nutrition ed
 - Quote: "intention only gets you so far without direction"
 - Keep the site basic. Use the competition photos, but don't sell her as a bikini athlete in the text.
 - Avoid "too girly" wording (e.g. "strong, sculpted and confident").
-- Colours: red, white and black — no pink. (She may move the online look to a lighter style later; ask before changing.)
+- Website uses the light Everfit look (Nov 2026): cream #F6F1EA, sand #EDE3D6, espresso #3A2E28 buttons, Lora + Poppins. Red/black is for gym materials only.
+- Top of the page: bold "Book your FREE no-obligation consult" + "Apply for free consult now" button. No images in the packages section; no prices shown.
 - Don't mention a 4-week minimum or cancellation terms on the site.
 - Don't add claims or content Jessica didn't provide.
